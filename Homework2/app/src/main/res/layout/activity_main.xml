@@ -4,19 +4,39 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/colorCode"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="RGB code"
+            android:background="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="16dp"
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/bg"
-        android:scaleType="centerCrop"/>
-
-</LinearLayout>
-
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/colorCode"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@id/colorCode"
+            android:text="//RGB"/>
+    </RelativeLayout>
 
 
 
